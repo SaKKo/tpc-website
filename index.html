@@ -9,7 +9,7 @@
     <!-- ฟอนต์ Prompt เพื่อความอ่านง่ายและเป็นมืออาชีพ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght=300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome สำหรับ ไอคอนประกอบ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -38,22 +38,24 @@
                         <span class="text-xs text-slate-500 tracking-wider font-semibold">ในเครือ ทองพันชั่งโลหะกิจ & ที.พี.ซี. เทรลเล่อร์ทรานสปอร์ต</span>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-8 font-medium">
+                <div class="hidden md:flex items-center space-x-6 font-medium">
                     <a href="#home" class="text-slate-600 hover:text-red-600 transition-colors">หน้าแรก</a>
                     <a href="#services" class="text-slate-600 hover:text-red-600 transition-colors">บริการของเรา</a>
-                    <a href="#companies" class="text-slate-600 hover:text-red-600 transition-colors">บริษัทในเครือ</a>
-                    <a href="#contact" class="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-all shadow-sm hover:shadow-md">ติดต่อสั่งซื้อเหล็ก</a>
+                    <a href="#contact" class="text-slate-600 hover:text-red-600 transition-colors">รายละเอียดบริษัท</a>
+                    <a href="tel:+6627549303" class="bg-red-600 text-white px-4 py-2.5 rounded-lg hover:bg-red-700 transition-all shadow-sm hover:shadow-md flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-phone"></i> โทรติดต่อฝ่ายขาย
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- ส่วนต้อนรับหลัก (เน้นทองทวีทรัพย์ สตีล) -->
+    <!-- ส่วนต้อนรับหลัก -->
     <section id="home" class="hero-bg min-h-[75vh] flex items-center text-white pt-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left w-full">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <span class="bg-red-600/20 text-red-400 border border-red-500/30 px-3 py-1.5 rounded-full text-sm font-semibold tracking-wideประเด็น">
+                    <span class="bg-red-600/20 text-red-400 border border-red-500/30 px-3 py-1.5 rounded-full text-sm font-semibold tracking-wide">
                         ศูนย์จำหน่ายเหล็กโครงสร้างและเหล็กอุตสาหกรรม
                     </span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
@@ -63,11 +65,11 @@
                         เราคือฟันเฟืองหลักในการจัดจำหน่ายและจัดหาผลิตภัณฑ์เหล็กทุกชนิด ตอบโจทย์ทุกงานก่อสร้างและโรงงานอุตสาหกรรม มั่นใจได้ด้วยการสนับสนุนจากเครือข่ายพันธมิตรที่ยาวนานและระบบขนส่งโลจิสติกส์ของเราเอง
                     </p>
                     <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#contact" class="bg-red-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-red-700 transition-all shadow-lg hover:shadow-red-600/20 text-center text-lg">
-                            <i class="fa-solid fa-phone mr-2"></i> ติดต่อขอใบเสนอราคา
+                        <a href="tel:+6627549303" class="bg-red-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-red-700 transition-all shadow-lg hover:shadow-red-600/20 text-center text-lg flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone animate-bounce"></i> โทรขอใบเสนอราคา
                         </a>
-                        <a href="#services" class="bg-white/10 text-white border border-white/20 backdrop-blur-sm px-8 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition-all text-center">
-                            ดูรายละเอียดบริการ
+                        <a href="#sales-section" class="bg-white/10 text-white border border-white/20 backdrop-blur-sm px-8 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-address-book"></i> ช่องทางติดต่อทั้งหมด
                         </a>
                     </div>
                 </div>
@@ -94,7 +96,7 @@
         </div>
     </section>
 
-    <!-- บริการหลัก (เน้นการค้าเหล็ก) -->
+    <!-- บริการหลัก -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -104,7 +106,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- บริการที่ 1: เน้นหนักที่สุด -->
+                <!-- บริการที่ 1 -->
                 <div class="bg-slate-50 border-t-4 border-red-600 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all space-y-4">
                     <div class="bg-red-100 text-red-600 p-4 rounded-xl h-14 w-14 flex items-center justify-center shadow-sm">
                         <i class="fa-solid fa-cubes text-2xl"></i>
@@ -142,15 +144,17 @@
             </div>
 
             <!-- รูปภาพประกอบสินค้า/คลังสินค้า -->
-            <div class="mt-16 relative">
-                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-red-600 to-amber-500 opacity-15 blur-lg"></div>
-                <img src="https://image.pollinations.ai/prompt/A%20heavy%20duty%20flatbed%20trailer%20truck%20transporting%20large%20steel%20beams%20on%20a%20highway,%20professional%20commercial%20photography,%20daylight?width=1200&height=500&nologo=true" alt="คลังสินค้าเหล็กและการขนส่ง" class="relative rounded-2xl shadow-xl object-cover w-full h-[400px]">
+            <div class="mt-16 relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-2xl shadow-xl">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-amber-500 opacity-15 blur-lg"></div>
+                <img src="https://image.pollinations.ai/prompt/A%20heavy%20duty%20flatbed%20trailer%20truck%20transporting%20large%20steel%20beams%20on%20a%20highway,%20professional%20commercial%20photography,%20daylight?width=1200&height=500&nologo=true" 
+                     alt="คลังสินค้าเหล็กและการขนส่ง" 
+                     class="w-full h-full object-cover object-center relative">
             </div>
         </div>
     </section>
 
-    <!-- ส่วนข้อมูลรายบริษัทในเครือ (ปรับโครงสร้างเน้น ทองทวีทรัพย์ ไว้บนสุด/เด่นสุด) -->
-    <section id="companies" class="py-20 bg-slate-100">
+    <!-- ส่วนข้อมูลรายบริษัทในเครือ -->
+    <section id="contact" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">ทำความรู้จักบริษัทในเครือของเรา</h2>
@@ -166,7 +170,7 @@
                             <span class="bg-white/20 text-white px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider block w-max mb-3">ธุรกิจหลัก / ติดต่อซื้อเหล็ก</span>
                             <h3 class="text-2xl font-bold leading-tight">บริษัท ทองทวีทรัพย์ สตีล จำกัด</h3>
                         </div>
-                        <p class="text-red-100 text-sm mt-4 font-light">ศูนย์กลางการสั่งซื้อเหล็กทุกชนิดสำหรับลูกค้าใหม่และโครงการก่อสร้างทั่วไป</p>
+                        <p class="text-red-100 text-sm mt-4 font-light">ศูนย์กลางการสั่งซื้อเหล็กทุกชนิดสำหรับลูกค้าใหม่ โครงการก่อสร้าง และร้านค้าปลีก</p>
                     </div>
                     <div class="p-8 md:col-span-2 flex flex-col justify-between space-y-6 bg-gradient-to-br from-white to-red-50/30">
                         <div class="grid sm:grid-cols-2 gap-6 text-slate-600 text-sm">
@@ -178,10 +182,27 @@
                                 <strong class="text-slate-900 flex items-center gap-2"><i class="fa-solid fa-id-card text-slate-400"></i> เลขประจำตัวผู้เสียภาษี</strong>
                                 <p class="font-mono bg-slate-100 px-2 py-1 rounded text-xs w-max">0115543001516</p>
                             </div>
+                            <div class="space-y-2 sm:col-span-2 border-t border-slate-100 pt-3">
+                                <strong class="text-slate-900 flex items-center gap-2"><i class="fa-solid fa-phone text-red-600"></i> เบอร์โทรศัพท์ติดต่อ</strong>
+                                <p class="text-slate-700 font-medium tracking-wide">
+                                    02-754-9303, 02-754-9304, 02-754-9305, 02-385-2876
+                                </p>
+                            </div>
+                            <div class="space-y-2 border-t border-slate-100 pt-3">
+                                <strong class="text-slate-900 flex items-center gap-2"><i class="fa-solid fa-envelope text-red-600"></i> อีเมล</strong>
+                                <p class="font-mono text-slate-700">THONGTHAVEESUP@GMAIL.COM</p>
+                            </div>
+                            <div class="space-y-2 border-t border-slate-100 pt-3">
+                                <strong class="text-slate-900 flex items-center gap-2"><i class="fa-brands fa-line text-green-600"></i> Line ID</strong>
+                                <p class="font-mono text-slate-700">thongthaveesup</p>
+                            </div>
                         </div>
-                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2 border-t border-slate-100">
                             <a href="https://maps.app.goo.gl/3fjZDtYsbRduHGY4A" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-900 text-white font-medium py-3 px-6 rounded-xl hover:bg-red-600 transition-colors shadow-sm text-sm">
                                 <i class="fa-solid fa-map-location-dot"></i> ดูแผนที่ สาขาเทพารักษ์
+                            </a>
+                            <a href="tel:+6627549303" class="inline-flex items-center justify-center gap-2 bg-red-600 text-white font-medium py-3 px-6 rounded-xl hover:bg-red-700 transition-colors shadow-sm text-sm font-semibold">
+                                <i class="fa-solid fa-phone"></i> โทรสายด่วนฝ่ายขาย
                             </a>
                         </div>
                     </div>
@@ -200,9 +221,6 @@
                                 <p><strong>ที่ตั้งสำนักงาน:</strong> 1541/8-9 หมู่6 ถนนเทพารักษ์ (กม.6) ต.เทพารักษ์ อ.เมืองสมุทรปราการ จ.สมุทรปราการ 10270</p>
                                 <p><strong>เลขประจำตัวผู้เสียภาษี:</strong> <span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-xs">0105536112227</span></p>
                             </div>
-                            <a href="https://maps.app.goo.gl/3fjZDtYsbRduHGY4A" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-100 text-slate-700 font-medium py-2.5 px-4 rounded-xl hover:bg-slate-200 transition-colors text-xs">
-                                <i class="fa-solid fa-map-location-dot"></i> ดูแผนที่ สาขาเทพารักษ์
-                            </a>
                         </div>
                     </div>
 
@@ -217,9 +235,6 @@
                                 <p><strong>ที่ตั้งสำนักงาน:</strong> 55/61 ซอยศาลาแดง 2 ถนนสีลม แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500</p>
                                 <p><strong>เลขประจำตัวผู้เสียภาษี:</strong> <span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-xs">0105534113315</span></p>
                             </div>
-                            <a href="https://maps.app.goo.gl/3fjZDtYsbRduHGY4A" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-100 text-slate-700 font-medium py-2.5 px-4 rounded-xl hover:bg-slate-200 transition-colors text-xs">
-                                <i class="fa-solid fa-map-location-dot"></i> ดูแผนที่ สาขาสีลม
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -227,9 +242,9 @@
         </div>
     </section>
 
-    <!-- ส่วนติดต่อเรา (เน้นศูนย์กลางสั่งซื้อและรับสินค้าที่เทพารักษ์) -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ส่วนติดต่อเรา (เซกชันฝ่ายขายและการตลาด) -->
+    <section id="sales-section" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-slate-900 rounded-3xl text-white p-8 md:p-12 shadow-xl relative overflow-hidden">
                 <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-red-600/10 rounded-full blur-2xl"></div>
                 
@@ -240,24 +255,55 @@
                         <p class="text-slate-400 text-sm md:text-base">ยินดีต้อนรับลูกค้าใหม่ ผู้รับเหมา และโครงการก่อสร้างทุกระดับ พร้อมบริการขนส่งทั่วประเทศ</p>
                     </div>
 
-                    <div class="grid md:grid-cols-2 gap-8 border-t border-slate-800 pt-8">
-                        <div class="space-y-4">
+                    <!-- ช่องทางการติดต่อหลักแยกเป็น Grid -->
+                    <div class="grid md:grid-cols-3 gap-6 border-t border-slate-800 pt-8">
+                        <div class="bg-slate-800/45 p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-2">
+                            <div class="bg-red-600/10 text-red-500 p-3 rounded-xl">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <span class="text-slate-400 text-xs font-semibold">เบอร์โทรศัพท์ฝ่ายขาย</span>
+                            <div class="text-sm font-medium space-y-1 w-full">
+                                <a href="tel:+6627549303" class="block hover:text-red-400 transition-colors">02-754-9303</a>
+                                <a href="tel:+6627549304" class="block hover:text-red-400 transition-colors">02-754-9304</a>
+                                <a href="tel:+6627549305" class="block hover:text-red-400 transition-colors">02-754-9305</a>
+                                <a href="tel:+6623852876" class="block hover:text-red-400 transition-colors">02-385-2876</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800/45 p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-2">
+                            <div class="bg-green-600/10 text-green-500 p-3 rounded-xl">
+                                <i class="fa-brands fa-line text-xl"></i>
+                            </div>
+                            <span class="text-slate-400 text-xs font-semibold">Line Official ID</span>
+                            <p class="text-base font-bold text-green-400 select-all tracking-wide">thongthaveesup</p>
+                            <p class="text-slate-500 text-[11px]">พิมพ์ค้นหาไอดีในแอป Line เพื่อติดต่อ</p>
+                        </div>
+
+                        <div class="bg-slate-800/45 p-5 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-2">
+                            <div class="bg-blue-600/10 text-blue-400 p-3 rounded-xl">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <span class="text-slate-400 text-xs font-semibold">อีเมลติดต่อฝ่ายจัดซื้อ/ขาย</span>
+                            <a href="mailto:Thongthaveesup@gmail.com" class="text-sm font-medium hover:text-blue-400 transition-colors break-all">
+                                THONGTHAVEESUP@GMAIL.COM
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 border-t border-slate-800 pt-8 items-center">
+                        <div class="space-y-2">
                             <h4 class="text-white font-bold text-sm">ศูนย์ประสานงานและการรับสินค้าหลัก</h4>
                             <p class="text-slate-400 text-xs leading-relaxed">
-                                ท่านสามารถติดต่อสั่งซื้อเหล็กของ <strong>ทองทวีทรัพย์ สตีล</strong> และเข้าประสานงานหรือรับสินค้าได้ที่คลังสินค้าถนนเทพารักษ์ (จุดเดียวกับ ทองพันชั่งโลหะกิจ)
+                                ท่านสามารถติดต่อสั่งซื้อเหล็กของ <strong>ทองทวีทรัพย์ สตีล</strong> และเข้าประสานงานหรือรับสินค้าได้ที่คลังสินค้าถนนเทพารักษ์ กม.6 จังหวัดสมุทรปราการ (จุดเดียวกับ ทองพันชั่งโลหะกิจ)
                             </p>
-                            <ul class="space-y-2 text-slate-300 text-xs">
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-location-dot text-red-500"></i>
-                                    <span>ถนนเทพารักษ์ กม.6 จ.สมุทรปราการ</span>
-                                </li>
-                            </ul>
                         </div>
                         
-                        <div class="flex flex-col justify-center items-center md:items-start space-y-4">
-                            <p class="text-center md:text-left text-slate-300 text-sm">คลิกปุ่มด้านล่างเพื่อเปิดกูเกิลแมปส์นำทางมายังคลังสินค้าหลัก</p>
-                            <a href="https://maps.app.goo.gl/3fjZDtYsbRduHGY4A" target="_blank" class="inline-flex items-center gap-2 bg-red-600 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-red-700 transition-all shadow-md hover:shadow-red-600/20 w-full justify-center sm:w-auto text-sm">
-                                <i class="fa-solid fa-location-arrow"></i> เปิดแผนที่นำทางบน กูเกิลแมปส์
+                        <div class="flex flex-col sm:flex-row gap-4 w-full">
+                            <a href="tel:+6627549303" class="inline-flex items-center justify-center gap-2 bg-red-600 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-red-700 transition-all shadow-md hover:shadow-red-600/20 w-full text-sm">
+                                <i class="fa-solid fa-phone"></i> โทรสายด่วนหลัก
+                            </a>
+                            <a href="https://maps.app.goo.gl/3fjZDtYsbRduHGY4A" target="_blank" class="inline-flex items-center justify-center gap-2 bg-slate-800 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-slate-700 transition-all shadow-md w-full text-sm border border-slate-700">
+                                <i class="fa-solid fa-location-arrow"></i> เปิดแผนที่นำทาง
                             </a>
                         </div>
                     </div>
